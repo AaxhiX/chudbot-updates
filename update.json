@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.0",
+    "version": "0.6.1",
     "apk": "ChudBot.apk",
-    "notes": "GPU drawing (much smoother), runs in the background with a progress notification"
+    "notes": "Clean progress notification, asks for notifications, runs + goes silent when you leave, reconnect + restart from home, decline drops, AC-only keeps quest items"
   },
   "bots": [
     {
