@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.3",
+    "version": "0.6.5",
     "apk": "ChudBot.apk",
-    "notes": "Live progress card on the lock screen: time, kills, gold earned"
+    "notes": "Renamed to Chud Bot. Drops decline properly (incl. items you already own), update check every minute, Log tab shows background/notification status"
   },
   "bots": [
     {
