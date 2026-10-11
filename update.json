@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.7.1",
+    "version": "0.7.2",
     "apk": "ChudBot.apk",
-    "notes": "Notification shows map, time, kills and gold without expanding it. Closes fully when cleaned up (no more stuck portrait), Close app button"
+    "notes": "Notification back to the normal size. On Android 16+ it shows fully open on the lock screen as a Live Update (with a % chip in the status bar)"
   },
   "bots": [
     {
