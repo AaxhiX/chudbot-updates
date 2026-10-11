@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.2",
+    "version": "0.6.3",
     "apk": "ChudBot.apk",
-    "notes": "Stays silent in the background even after a reconnect"
+    "notes": "Live progress card on the lock screen: time, kills, gold earned"
   },
   "bots": [
     {
