@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.1",
+    "version": "0.6.2",
     "apk": "ChudBot.apk",
-    "notes": "Clean progress notification, asks for notifications, runs + goes silent when you leave, reconnect + restart from home, decline drops, AC-only keeps quest items"
+    "notes": "Stays silent in the background even after a reconnect"
   },
   "bots": [
     {
