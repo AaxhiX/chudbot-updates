@@ -1,0 +1,77 @@
+{
+  "app": {
+    "version": "0.4.0",
+    "apk": "ChudBot.apk",
+    "notes": "First version with updates"
+  },
+  "bots": [
+    {
+      "name": "13 Lords of Chaos Storyline.gbot",
+      "rev": "eba1c794233fe720"
+    },
+    {
+      "name": "Archfiend v4.gbot",
+      "rev": "5462d666f0d4df34"
+    },
+    {
+      "name": "Archmage.gbot",
+      "rev": "3110a37d12d42496"
+    },
+    {
+      "name": "Blinding Light of Destiny V3.gbot",
+      "rev": "4096dc79f77ff506"
+    },
+    {
+      "name": "Doom Metal Necro.gbot",
+      "rev": "3c2ba67cbf996d36"
+    },
+    {
+      "name": "Head of the Legion Beast.gbot",
+      "rev": "15a752c37ca5bd1f"
+    },
+    {
+      "name": "King Echo.gbot",
+      "rev": "561293bc9adc705f"
+    },
+    {
+      "name": "Kings.gbot",
+      "rev": "bfdba34a4dc51015"
+    },
+    {
+      "name": "Lord of Order v2.gbot",
+      "rev": "de319bb5637cd43d"
+    },
+    {
+      "name": "Martial Artist.gbot",
+      "rev": "a99a409ee28a3bf4"
+    },
+    {
+      "name": "Necrotic Sword of Doom v3.gbot",
+      "rev": "09462e2f865c61d8"
+    },
+    {
+      "name": "StoneCrusher.gbot",
+      "rev": "303b867ff92bd3ad"
+    },
+    {
+      "name": "The World Storyline.gbot",
+      "rev": "8c2c62d58cc5a8f5"
+    },
+    {
+      "name": "Verus DoomKnight.gbot",
+      "rev": "f28df20aeef0a03e"
+    },
+    {
+      "name": "[GENBOT] ARCANA INVOKER 1 out of 6.gbot",
+      "rev": "fea3da165c14a098"
+    },
+    {
+      "name": "[GENBOT] Trial of the Vessel (Weekly Quest).gbot",
+      "rev": "0be0360ddb7aa554"
+    },
+    {
+      "name": "v2 Gathering Unstable Essences.gbot",
+      "rev": "cbdcab3a0d83f240"
+    }
+  ]
+}
