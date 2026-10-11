@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.4.0",
+    "version": "0.4.1",
     "apk": "ChudBot.apk",
-    "notes": "First version with updates"
+    "notes": "Share to ChudBot, BIN files, updates"
   },
   "bots": [
     {
