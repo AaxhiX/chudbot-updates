@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.7.0",
+    "version": "0.7.1",
     "apk": "ChudBot.apk",
-    "notes": "Fixes portrait after cleaning up the app (it now closes fully and reopens in landscape). Close app button on the notification. Android helper for notifications / background, reconnect server picker"
+    "notes": "Notification shows map, time, kills and gold without expanding it. Closes fully when cleaned up (no more stuck portrait), Close app button"
   },
   "bots": [
     {
