@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.5.0",
+    "version": "0.5.1",
     "apk": "ChudBot.apk",
-    "notes": "New look, bot editor, Classes tab, private/public rooms, smoother graphics"
+    "notes": "Fixed overlapping UI"
   },
   "bots": [
     {
