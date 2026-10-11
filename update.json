@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.9",
+    "version": "0.7.0",
     "apk": "ChudBot.apk",
-    "notes": "Close app button on the notification. Android helper that works around the #2113 add-on bug, and pick which server to reconnect to (Bots tab)"
+    "notes": "Fixes portrait after cleaning up the app (it now closes fully and reopens in landscape). Close app button on the notification. Android helper for notifications / background, reconnect server picker"
   },
   "bots": [
     {
