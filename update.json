@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.7",
+    "version": "0.6.8",
     "apk": "ChudBot.apk",
-    "notes": "Starts the Android add-on before the game loads (fix for notifications / background). New Copy diagnostics button in Log"
+    "notes": "New Android helper that works around the #2113 add-on bug (notifications, background, Back, Autostart). Pick which server to reconnect to (Bots tab)"
   },
   "bots": [
     {
