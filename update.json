@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.6",
+    "version": "0.6.7",
     "apk": "ChudBot.apk",
-    "notes": "Stays open in the background: Back hides the app instead of closing it, live card starts right away, new Autostart button (Xiaomi) in Log"
+    "notes": "Starts the Android add-on before the game loads (fix for notifications / background). New Copy diagnostics button in Log"
   },
   "bots": [
     {
