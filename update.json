@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.6.5",
+    "version": "0.6.6",
     "apk": "ChudBot.apk",
-    "notes": "Renamed to Chud Bot. Drops decline properly (incl. items you already own), update check every minute, Log tab shows background/notification status"
+    "notes": "Stays open in the background: Back hides the app instead of closing it, live card starts right away, new Autostart button (Xiaomi) in Log"
   },
   "bots": [
     {
