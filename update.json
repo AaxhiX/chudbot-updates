@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.5.1",
+    "version": "0.5.2",
     "apk": "ChudBot.apk",
-    "notes": "Fixed overlapping UI"
+    "notes": "Remove all animations, pick up other drops (AC / non-AC) and bank them"
   },
   "bots": [
     {
