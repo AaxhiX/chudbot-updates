@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.7.5",
+    "version": "0.7.6",
     "apk": "ChudBot.apk",
-    "notes": "Quests are accepted again after a reconnect. Classes for bosses vs groups. Auto attack enemies (Options). Bot packets fill in room id, room number and player name like Grimoire"
+    "notes": "Small notification: bar matches the opened card (bot progress) and the farm count is pinned right so it is never cut off. Shows any monster instead of *"
   },
   "bots": [
     {
