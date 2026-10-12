@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.8.1",
+    "version": "0.8.2",
     "apk": "ChudBot.apk",
-    "notes": "MediaFire and other sharing links import bots now. Broken bot files get fixed or show where the error is. Colored log"
+    "notes": "Smooth button (Options): full phone power plus the lightest game drawing, so it lags less"
   },
   "changelog": [
+    {"version": "0.8.2", "notes": "Smooth button (Options tab, next to Walk speed)\nFull phone power: steady top CPU/GPU speed and your screen's highest refresh rate (uses more battery)\nPlus low quality, lag killer, hidden players, no animations and 30 FPS in one tap"},
     {"version": "0.8.1", "notes": "Paste a MediaFire link and it finds the real file (also Google Drive, Dropbox, GitHub, Pastebin)\nAny file can be a bot: .txt, .bin, .json, Notepad Unicode files, x.gbot.txt names\nSmall mistakes in bot files are fixed (comments, trailing commas, curly quotes, extra text); otherwise it shows the line and column of the error\nLog colors: red = failed, yellow = small problem, green = worked"},
     {"version": "0.8.0", "notes": "New look: Legion (Style tab, Look), Dage's Undead Legion\nBlack with electric blue Legion fire, skull sigil, steel buttons with blue glow, black horn corners and a blue logo (art made with ChatGPT from real Legion art)\nLogo always fits above the version number"},
     {"version": "0.7.9", "notes": "New look: Shadowscythe (Style tab, Look)\nBlack-purple stone with violet runes, glowing violet buttons, silver rims, spiked corners and a silver-purple logo (art made with ChatGPT)"},
