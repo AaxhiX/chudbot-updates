@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.8.0",
+    "version": "0.8.1",
     "apk": "ChudBot.apk",
-    "notes": "New Legion look (Style tab, Look): black with electric blue Legion fire"
+    "notes": "MediaFire and other sharing links import bots now. Broken bot files get fixed or show where the error is. Colored log"
   },
   "changelog": [
+    {"version": "0.8.1", "notes": "Paste a MediaFire link and it finds the real file (also Google Drive, Dropbox, GitHub, Pastebin)\nAny file can be a bot: .txt, .bin, .json, Notepad Unicode files, x.gbot.txt names\nSmall mistakes in bot files are fixed (comments, trailing commas, curly quotes, extra text); otherwise it shows the line and column of the error\nLog colors: red = failed, yellow = small problem, green = worked"},
     {"version": "0.8.0", "notes": "New look: Legion (Style tab, Look), Dage's Undead Legion\nBlack with electric blue Legion fire, skull sigil, steel buttons with blue glow, black horn corners and a blue logo (art made with ChatGPT from real Legion art)\nLogo always fits above the version number"},
     {"version": "0.7.9", "notes": "New look: Shadowscythe (Style tab, Look)\nBlack-purple stone with violet runes, glowing violet buttons, silver rims, spiked corners and a silver-purple logo (art made with ChatGPT)"},
     {"version": "0.7.8", "notes": "New AQ look: Style tab, Look, AQ (gold + leather)\nBoxy gold, red and dark buttons, AQ switches, leather panels, gold corners and a gold CHUD BOT logo (art made with ChatGPT)\nGreen-and-gold update banner\nNew app icon: the chud guy drawn in AQW style\nSwitch back to the Default look anytime"},
