@@ -1,11 +1,11 @@
 {
   "app": {
-    "version": "0.7.6",
+    "version": "0.7.7",
     "apk": "ChudBot.apk",
-    "notes": "Small notification: bar matches the opened card (bot progress) and the farm count is pinned right so it is never cut off. Shows any monster instead of *"
+    "notes": "Check updates button and What's new (update log) in Log. Green update messages. Items tab split into sections by type"
   },
   "changelog": [
-    {"version": "0.7.7", "notes": "Check updates button in Log: tells you if you're up to date\nWhat's new: this update log, from 0.4.0 to now\nUpdate messages are green and start the update when you tap them"},
+    {"version": "0.7.7", "notes": "Check updates button in Log: tells you if you're up to date\nWhat's new: this update log, from 0.4.0 to now\nUpdate messages are green and start the update when you tap them\nItems tab: sections by type (Classes, Weapons, Armors, Helms, Capes, Pets...) and a Type filter"},
     {"version": "0.7.6", "notes": "Small notification: the bar matches the opened card (bot progress)\nThe farm count is pinned right, so it's never cut off\nShows \"any monster\" instead of *"},
     {"version": "0.7.5", "notes": "Quests are accepted again after a disconnect, however you started them\nClasses for bosses (1 target) and groups (2+ targets)\nAuto attack enemies (Options)\nBot packets work like Grimoire: room id, room number and player name filled in"},
     {"version": "0.7.4", "notes": "New app icon\nNotification shows what the bot is farming (have / need) and your quest progress\nFinished quests and items say Done and move to the bottom"},
