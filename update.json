@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.7.4",
+    "version": "0.7.5",
     "apk": "ChudBot.apk",
-    "notes": "New app icon. Notification shows what the bot is farming (item have / need) and your quest progress, finished ones marked Done and moved to the bottom"
+    "notes": "Quests are accepted again after a reconnect. Classes for bosses vs groups. Auto attack enemies (Options). Bot packets fill in room id, room number and player name like Grimoire"
   },
   "bots": [
     {
