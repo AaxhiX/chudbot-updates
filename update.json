@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.8.4",
+    "version": "0.8.5",
     "apk": "ChudBot.apk",
-    "notes": "Bots no longer get stuck buying: buys go straight to the server, and failed buys say why"
+    "notes": "Before buying, the bot checks your bank: it takes the item or the merge items it needs out of the bank first"
   },
   "changelog": [
+    {"version": "0.8.5", "notes": "Before buying, the bot checks your bank\nIf the item is already in your bank, it moves it to your inventory instead of buying another\nIf a merge item needs items that are in your bank, it takes those out first so the buy works"},
     {"version": "0.8.4", "notes": "Fixed bots getting stuck when buying: buys go straight to the server (no more \"Are you sure?\" box blocking it)\nIf a buy fails, the log says why (no gold, locked, wrong shop...)\nAfter 3 failed buys of the same item in a row, the bot stops with the reason instead of looping forever"},
     {"version": "0.8.3", "notes": "The big menu no longer moves when you hold it: it always opens centered\nThe little CHUD button can still be dragged and remembers where you left it"},
     {"version": "0.8.2", "notes": "Smooth button (Options tab, next to Walk speed)\nFull phone power: steady top CPU/GPU speed and your screen's highest refresh rate (uses more battery)\nPlus low quality, lag killer, hidden players, no animations and 30 FPS in one tap"},
