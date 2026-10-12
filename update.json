@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.7.8",
+    "version": "0.7.9",
     "apk": "ChudBot.apk",
-    "notes": "New AQ look (Style tab, Look, AQ) and a new AQW-style app icon"
+    "notes": "New Shadowscythe look (Style tab, Look): black-purple stone, glowing violet and silver"
   },
   "changelog": [
+    {"version": "0.7.9", "notes": "New look: Shadowscythe (Style tab, Look)\nBlack-purple stone with violet runes, glowing violet buttons, silver rims, spiked corners and a silver-purple logo (art made with ChatGPT)"},
     {"version": "0.7.8", "notes": "New AQ look: Style tab, Look, AQ (gold + leather)\nBoxy gold, red and dark buttons, AQ switches, leather panels, gold corners and a gold CHUD BOT logo (art made with ChatGPT)\nGreen-and-gold update banner\nNew app icon: the chud guy drawn in AQW style\nSwitch back to the Default look anytime"},
     {"version": "0.7.7", "notes": "Check updates button in Log: tells you if you're up to date\nWhat's new: this update log, from 0.4.0 to now\nUpdate messages are green and start the update when you tap them\nItems tab: sections by type (Classes, Weapons, Armors, Helms, Capes, Pets...) and a Type filter"},
     {"version": "0.7.6", "notes": "Small notification: the bar matches the opened card (bot progress)\nThe farm count is pinned right, so it's never cut off\nShows \"any monster\" instead of *"},
