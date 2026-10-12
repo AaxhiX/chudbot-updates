@@ -1,8 +1,8 @@
 {
   "app": {
-    "version": "0.7.3",
+    "version": "0.7.4",
     "apk": "ChudBot.apk",
-    "notes": "Cleaner notification: full width so text fits (wraps instead of cutting off), one bar, name shown once, picture inside the card, colors follow your Style accent"
+    "notes": "New app icon. Notification shows what the bot is farming (item have / need) and your quest progress, finished ones marked Done and moved to the bottom"
   },
   "bots": [
     {
