@@ -4,6 +4,31 @@
     "apk": "ChudBot.apk",
     "notes": "Small notification: bar matches the opened card (bot progress) and the farm count is pinned right so it is never cut off. Shows any monster instead of *"
   },
+  "changelog": [
+    {"version": "0.7.7", "notes": "Check updates button in Log: tells you if you're up to date\nWhat's new: this update log, from 0.4.0 to now\nUpdate messages are green and start the update when you tap them"},
+    {"version": "0.7.6", "notes": "Small notification: the bar matches the opened card (bot progress)\nThe farm count is pinned right, so it's never cut off\nShows \"any monster\" instead of *"},
+    {"version": "0.7.5", "notes": "Quests are accepted again after a disconnect, however you started them\nClasses for bosses (1 target) and groups (2+ targets)\nAuto attack enemies (Options)\nBot packets work like Grimoire: room id, room number and player name filled in"},
+    {"version": "0.7.4", "notes": "New app icon\nNotification shows what the bot is farming (have / need) and your quest progress\nFinished quests and items say Done and move to the bottom"},
+    {"version": "0.7.3", "notes": "Cleaner notification: text fits, one bar, picture inside the card\nNotification colors follow your Style accent"},
+    {"version": "0.7.2", "notes": "Small notification back to normal size\nAndroid 16+: fully open Live Update card on the lock screen"},
+    {"version": "0.7.1", "notes": "More info in the small notification"},
+    {"version": "0.7.0", "notes": "Clearing the app closes it fully, so it opens in landscape again (no more stuck portrait)"},
+    {"version": "0.6.9", "notes": "Close app button on the notification"},
+    {"version": "0.6.8", "notes": "Notifications and background running work (works around Android's add-on bug)\nPick which server to reconnect to (Bots tab)"},
+    {"version": "0.6.7", "notes": "Copy diagnostics button in Log, for fixing problems"},
+    {"version": "0.6.6", "notes": "Back hides the app instead of closing it, so the bot keeps going\nAutostart button for Xiaomi phones"},
+    {"version": "0.6.5", "notes": "Renamed to Chud Bot\nDrops decline properly, including items you already own\nChecks for updates every minute"},
+    {"version": "0.6.3", "notes": "Live card on the lock screen: time, kills, gold earned"},
+    {"version": "0.6.2", "notes": "Stays silent in the background after a reconnect"},
+    {"version": "0.6.1", "notes": "Cleaner progress notification\nMutes the game when you leave the app, sound comes back when you return\nReconnects, goes home, then restarts the bot\nDeclines drops that aren't in the quest or the bot"},
+    {"version": "0.6.0", "notes": "GPU drawing for more FPS\nKeeps running in the background with a progress notification"},
+    {"version": "0.5.2", "notes": "Remove all animations (damage numbers stay)\nPick up AC / non-AC drops and send them to the bank"},
+    {"version": "0.5.1", "notes": "Fixed overlapping menus"},
+    {"version": "0.5.0", "notes": "New look\nBot editor: change settings like the room number, and the commands (saved)\nClasses tab: class per monster from your inventory\nPublic or private rooms\nSmoother graphics"},
+    {"version": "0.4.2", "notes": "Update pop-ups without reopening the app\nStyle tab: colors, menu and button look"},
+    {"version": "0.4.1", "notes": "Bots update by themselves\nTap a .gbot file to open it in Chud Bot\nDelete bots (with a \"You sure?\")"},
+    {"version": "0.4.0", "notes": "First Chud Bot: run your .gbot bots on your phone\nMenu for bots, travel, options, packets, items, quests and the log\nImport .gbot files from your phone"}
+  ],
   "bots": [
     {
       "name": "13 Lords of Chaos Storyline.gbot",
