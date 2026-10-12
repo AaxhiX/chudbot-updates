@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.8.3",
+    "version": "0.8.4",
     "apk": "ChudBot.apk",
-    "notes": "The menu no longer drags around: it opens centered. Only the CHUD button can be dragged"
+    "notes": "Bots no longer get stuck buying: buys go straight to the server, and failed buys say why"
   },
   "changelog": [
+    {"version": "0.8.4", "notes": "Fixed bots getting stuck when buying: buys go straight to the server (no more \"Are you sure?\" box blocking it)\nIf a buy fails, the log says why (no gold, locked, wrong shop...)\nAfter 3 failed buys of the same item in a row, the bot stops with the reason instead of looping forever"},
     {"version": "0.8.3", "notes": "The big menu no longer moves when you hold it: it always opens centered\nThe little CHUD button can still be dragged and remembers where you left it"},
     {"version": "0.8.2", "notes": "Smooth button (Options tab, next to Walk speed)\nFull phone power: steady top CPU/GPU speed and your screen's highest refresh rate (uses more battery)\nPlus low quality, lag killer, hidden players, no animations and 30 FPS in one tap"},
     {"version": "0.8.1", "notes": "Paste a MediaFire link and it finds the real file (also Google Drive, Dropbox, GitHub, Pastebin)\nAny file can be a bot: .txt, .bin, .json, Notepad Unicode files, x.gbot.txt names\nSmall mistakes in bot files are fixed (comments, trailing commas, curly quotes, extra text); otherwise it shows the line and column of the error\nLog colors: red = failed, yellow = small problem, green = worked"},
