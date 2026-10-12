@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.8.7",
+    "version": "0.8.8",
     "apk": "ChudBot.apk",
-    "notes": "Fix: the \"Are you sure you want to buy\" box no longer stays stuck on screen after Yes"
+    "notes": "Fixed bots getting stuck at Buy (tested with ColdThunder: it buys Bananach's Last Will and carries on). Yes on the game's buy box works now"
   },
   "changelog": [
+    {"version": "0.8.8", "notes": "Fixed bots getting stuck at Buy: a Load shop right before Buy made the shop get asked for twice, and the game ignored the second time\nChud Bot keeps its own copy of the shop the server sends, so merge shops the game doesn't keep still work\nTapping Yes on the game's \"Are you sure you want to buy\" box: if the game doesn't send the buy, Chud Bot buys it for you\nDrops, shops and buys from the server now reach Chud Bot after logging in and reconnecting (this also helps declining drops)"},
     {"version": "0.8.7", "notes": "Fixed the game's \"Are you sure you want to buy…?\" box staying stuck after you tap Yes (even after changing maps)\nChud Bot closes it once the server has answered the buy, after 20 seconds, or when you change map"},
     {"version": "0.8.6", "notes": "Items tab: new Shop view. Open a shop in the game, then tap Shop\nShows prices, and for merge items what they need (have/need, and if it's in your bank)\nBuy goes straight to the server, so the game's merge window (black on some phones) never opens\nMerge items in your bank are taken out first"},
     {"version": "0.8.5", "notes": "Before buying, the bot checks your bank\nIf the item is already in your bank, it moves it to your inventory instead of buying another\nIf a merge item needs items that are in your bank, it takes those out first so the buy works"},
