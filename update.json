@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.9.1",
+    "version": "0.9.2",
     "apk": "ChudBot.apk",
-    "notes": "Your picked classes now switch when you do quests yourself, and the notification shows how long your quest is taking"
+    "notes": "Whole-bot timer (Finished in…), Follow a friend, and quest drops always get picked up"
   },
   "changelog": [
+    {"version": "0.9.2", "notes": "Bot timer: total time on a bot until it finishes, in the notification header and the Bots tab (tap it to start over)\nStopping only pauses it; starting the same bot again carries on, even after closing the app\nWhen the bot finishes: \"Bot finished. Took 2:13:45 in total.\"\nFollow a friend (Options tab): goes to their cell, and to their map when they leave; Pick lists the players in your room; turn on Auto attack to fight with them\nDrops a quest you're on needs are always picked up, even with Other drops on Leave (the phone's drop tray can fail to accept them)"},
     {"version": "0.9.1", "notes": "Classes tab works when you fight yourself (quests by hand), not only with a bot\nThe game ignores class changes mid-fight, so Chud Bot switches in the gap between fights\nTowns and houses (nothing to fight) leave your class alone\nNotification: ⏱ how long the current quest has taken (small, next to the percent), and \"done in\" after you turn it in"},
     {"version": "0.9.0", "notes": "Every item the server gives you (drops, temp items, quest items, buys) is checked: if the game's drop window failed to add it, Chud Bot adds it, so no more restarting to see items\nNo more 1-second wait before grabbing drops, and \"kill until I have X\" goes straight to the next monster and stops the moment you have enough\nClasses tab: your Default / Boss / Groups picks win over the bot's own Equip class steps\nClasses in your bank work: they're taken out when needed (the pickers list them too)\nAttack steps and Auto attack use your picked classes too"},
     {"version": "0.8.9", "notes": "Fixed bought items not showing in your inventory until you restarted the app (the game didn't know which item Chud Bot bought)\nThis also stops bots buying the same item again and again because they couldn't see it\nItems tab updates by itself when you get, buy, use or bank items"},
