@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "apk": "ChudBot.apk",
-    "notes": "Items always land in your inventory (drops, temp, buys), faster farming, and your Classes-tab picks are really used now"
+    "notes": "Your picked classes now switch when you do quests yourself, and the notification shows how long your quest is taking"
   },
   "changelog": [
+    {"version": "0.9.1", "notes": "Classes tab works when you fight yourself (quests by hand), not only with a bot\nThe game ignores class changes mid-fight, so Chud Bot switches in the gap between fights\nTowns and houses (nothing to fight) leave your class alone\nNotification: ⏱ how long the current quest has taken (small, next to the percent), and \"done in\" after you turn it in"},
     {"version": "0.9.0", "notes": "Every item the server gives you (drops, temp items, quest items, buys) is checked: if the game's drop window failed to add it, Chud Bot adds it, so no more restarting to see items\nNo more 1-second wait before grabbing drops, and \"kill until I have X\" goes straight to the next monster and stops the moment you have enough\nClasses tab: your Default / Boss / Groups picks win over the bot's own Equip class steps\nClasses in your bank work: they're taken out when needed (the pickers list them too)\nAttack steps and Auto attack use your picked classes too"},
     {"version": "0.8.9", "notes": "Fixed bought items not showing in your inventory until you restarted the app (the game didn't know which item Chud Bot bought)\nThis also stops bots buying the same item again and again because they couldn't see it\nItems tab updates by itself when you get, buy, use or bank items"},
     {"version": "0.8.8", "notes": "Fixed bots getting stuck at Buy: a Load shop right before Buy made the shop get asked for twice, and the game ignored the second time\nChud Bot keeps its own copy of the shop the server sends, so merge shops the game doesn't keep still work\nTapping Yes on the game's \"Are you sure you want to buy\" box: if the game doesn't send the buy, Chud Bot buys it for you\nDrops, shops and buys from the server now reach Chud Bot after logging in and reconnecting (this also helps declining drops)"},
