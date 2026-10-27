@@ -1,10 +1,11 @@
 {
   "app": {
-    "version": "0.9.7",
+    "version": "0.9.8",
     "apk": "ChudBot.apk",
-    "notes": "Skills no longer get stuck unused because of mana (all classes)"
+    "notes": "Bots never spend paid AC, names with apostrophes work, exact monster names"
   },
   "changelog": [
+    {"version": "0.9.8", "notes": "Bots never spend AC: only free (0 AC) AC items are bought, and when a shop has an AC and a Non-AC version with the same name (BattleMage Armor) the Non-AC one is bought; anything that costs AC stops the bot with a message\nNames match however the game writes them: curly apostrophes (Magician’s), quotes, dashes and spaces no longer make bots say \"doesn't sell it\" or farm things you already have\nBots pick the monster with the exact name first (short names like La, Fa or Dog no longer pick other monsters)\nA farm step ends when a quest turn-in uses its items, instead of farming forever\nA class you don't own is skipped once with a note, and the bot keeps your current class"},
     {"version": "0.9.7", "notes": "Skills held back by a mana rule (ArchMage's 4, Chaos Avenger, Yami no Ronin, Great Thief, StoneCrusher...) no longer get stuck unused: after 15 seconds they're used as soon as they're ready\nHP rules still apply (Void Highlord and Dragon of Time skills that cost HP wait until you have enough)"},
     {"version": "0.9.6", "notes": "Smarter skill orders: the order carries on from monster to monster instead of starting over (Arcana Invoker no longer resets its cycle, Verus DoomKnight keeps its Doom stacks)\nArcana Invoker uses its full cycle again, including summoning The World\nBuilt-in skill orders always wait for the next skill instead of firing whatever is ready"},
     {"version": "0.9.5", "notes": "Bots hunt: when a monster isn't in your cell, the bot goes to the cell that has it\nLess chance of getting kicked: no more asking the bank over and over, quest turn-ins that keep failing (reward at max stack, full inventory) wait and then stop with a message, and joining the map you're in keeps you in your cell\nQuest items in your bank are taken out before accepting or turning in a quest\nNew bot checks: whether a quest was already done (one-time and story quests)\nSkills: use a skill only while HP is above a value, or skip it when it's not ready\nSkill orders built in for 30 top classes (Arcana Invoker, ArchMage, Legion Revenant, Verus DoomKnight, Void Highlord, Dragon of Time, Chaos Avenger, LightCaster and more): ChudBot uses the right order for the class you're wearing in every bot, even bots with their own skill steps, with HP and mana rules (Void Highlord and Dragon of Time skills that cost HP wait until you have enough)"},
