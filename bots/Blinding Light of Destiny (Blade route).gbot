@@ -2,6 +2,82 @@
   "$type": "Grimoire.Botting.Configuration, Grimoire",
   "Commands": [
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "== Blinding Light of Destiny (Blade route) =="
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Rules this bot follows (bots/BOT_GUIDE.md):"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "- Skips what you already have (inventory, and bank: taken out first) and one-time quests already done."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "- Stops with a message when a quest is locked, you're short on level/gold/rank, a daily is used up, a loop is stuck, or a step needs you (ultras)."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "- AC only when it's free (0 AC): every buy below says its price, checked on the AQW wiki."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "- Waits between buys and turn-ins and never asks the bank inside a loop (no spam that gets you kicked)."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "- Skills: the app's built-in order for the class you wear. Needs ChudBot 0.9.7+ (hunting, skill orders, anti-kick); 0.9.8+ also blocks paid AC in the app."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "- Items with an AC twin (same name, AC and Non-AC): the bot stops before buying them unless ChudBot is 0.9.8+, which buys the Non-AC one."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buys:"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Blinding Light of Destiny Handle from shop 276: free (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Bonegrinder Medal from shop 276: gold 15,000. Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Bright Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Blessed Barium of Destiny from shop 434: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Blade of Destiny from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Brilliant Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Bright Blade of Destiny from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Blinding Blade of Destiny from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "  Buy Blinding Light of Destiny from shop 1415: free (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLog, Grimoire",
       "Text": "Classes: FarmClass for mobs, BossClass for bosses. Change them on the next two lines."
     },
@@ -153,6 +229,10 @@
       "QuestID": "2066"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Blinding Light of Destiny Handle from shop 276: free (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
       "Value1": "Blinding Light of Destiny Handle",
       "Value2": "1"
@@ -286,6 +366,10 @@
       "QuestID": "2067"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bonegrinder Medal from shop 276: gold 15,000. Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
       "Value1": "Bonegrinder Medal",
       "Value2": "1"
@@ -350,6 +434,23 @@
       "Message": "Stuck on buying Bonegrinder Medal (went round 4 times), so the bot stopped. Send the log."
     },
     {
+      "$type": "Grimoire.Botting.Commands.Player.Statements.CmdGoldGreaterThan, Grimoire",
+      "Value1": "14999",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L10"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "You need 15,000 gold for Bonegrinder Medal. Farm gold, then start the bot again."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L10"
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "276",
       "ItemName": "Bonegrinder Medal"
@@ -386,7 +487,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L10"
+      "Label": "L11"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -395,7 +496,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L11"
+      "Label": "L12"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -404,7 +505,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L11"
+      "Label": "L12"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -412,7 +513,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L11"
+      "Name": "L12"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -440,7 +541,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L12"
+      "Label": "L13"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -466,7 +567,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L12"
+      "Name": "L13"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
@@ -479,7 +580,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L10"
+      "Name": "L11"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestDone, Grimoire",
@@ -488,7 +589,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L13"
+      "Label": "L14"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -497,7 +598,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L14"
+      "Label": "L15"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -506,7 +607,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L14"
+      "Label": "L15"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -514,7 +615,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L14"
+      "Name": "L15"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -542,7 +643,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L15"
+      "Label": "L16"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -568,7 +669,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L15"
+      "Name": "L16"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
@@ -581,7 +682,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L13"
+      "Name": "L14"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestDone, Grimoire",
@@ -590,7 +691,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L16"
+      "Label": "L17"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -599,7 +700,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L17"
+      "Label": "L18"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -608,7 +709,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L17"
+      "Label": "L18"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -616,7 +717,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L17"
+      "Name": "L18"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -644,7 +745,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L19"
+      "Label": "L20"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -653,7 +754,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L20"
+      "Label": "L21"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -662,7 +763,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L20"
+      "Label": "L21"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -670,7 +771,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L20"
+      "Name": "L21"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -685,7 +786,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L21"
+      "Label": "L22"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -694,7 +795,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L21"
+      "Label": "L22"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -702,7 +803,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L21"
+      "Name": "L22"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -727,7 +828,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L18"
+      "Name": "L19"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -736,7 +837,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L19"
+      "Label": "L20"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -744,11 +845,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L18"
+      "Label": "L19"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L19"
+      "Name": "L20"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -795,7 +896,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L16"
+      "Name": "L17"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -819,7 +920,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L22"
+      "Label": "L23"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -843,7 +944,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L22"
+      "Label": "L23"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -867,7 +968,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L23"
+      "Label": "L24"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -891,7 +992,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L24"
+      "Label": "L25"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -919,7 +1020,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L25"
+      "Label": "L26"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -945,7 +1046,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L25"
+      "Name": "L26"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -990,7 +1091,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L24"
+      "Label": "L25"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -998,7 +1099,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L24"
+      "Name": "L25"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -1026,7 +1127,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L26"
+      "Label": "L27"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -1052,7 +1153,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L26"
+      "Name": "L27"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -1076,7 +1177,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L28"
+      "Label": "L29"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -1085,7 +1186,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L29"
+      "Label": "L30"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -1094,7 +1195,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L29"
+      "Label": "L30"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -1102,7 +1203,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L29"
+      "Name": "L30"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -1117,7 +1218,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L30"
+      "Label": "L31"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -1126,7 +1227,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L30"
+      "Label": "L31"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -1134,7 +1235,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L30"
+      "Name": "L31"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -1159,7 +1260,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L27"
+      "Name": "L28"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -1168,7 +1269,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L28"
+      "Label": "L29"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -1176,11 +1277,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L27"
+      "Label": "L28"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L28"
+      "Name": "L29"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -1233,7 +1334,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L23"
+      "Name": "L24"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -1257,17 +1358,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L33"
+      "Label": "L34"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L31",
+      "Int": "L32",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L31"
+      "Name": "L32"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -1276,17 +1377,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L33"
+      "Label": "L34"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L31",
+      "Int": "L32",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L31",
+      "Value1": "L32",
       "Value2": "22"
     },
     {
@@ -1300,7 +1401,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L32"
+      "Label": "L33"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -1324,17 +1425,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L36"
+      "Label": "L37"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L34",
+      "Int": "L35",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L34"
+      "Name": "L35"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -1343,17 +1444,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L36"
+      "Label": "L37"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L34",
+      "Int": "L35",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L34",
+      "Value1": "L35",
       "Value2": "70"
     },
     {
@@ -1367,7 +1468,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L35"
+      "Label": "L36"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -1391,7 +1492,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L38"
+      "Label": "L39"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -1400,7 +1501,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L39"
+      "Label": "L40"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -1409,7 +1510,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L39"
+      "Label": "L40"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -1417,7 +1518,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L39"
+      "Name": "L40"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -1432,7 +1533,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L40"
+      "Label": "L41"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -1441,7 +1542,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L40"
+      "Label": "L41"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -1449,7 +1550,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L40"
+      "Name": "L41"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -1474,7 +1575,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L37"
+      "Name": "L38"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -1483,7 +1584,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L38"
+      "Label": "L39"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -1491,11 +1592,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L37"
+      "Label": "L38"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L38"
+      "Name": "L39"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -1516,6 +1617,10 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
       "ItemName": "Loyal Spirit Orb"
@@ -1526,259 +1631,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L34"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L35"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
-      "QuestID": "2163"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Great Ornate Warhammer"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L41"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "dragonplane",
-      "Cell": "r2",
-      "Pad": "Right"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Earth Elemental",
-      "ItemName": "Great Ornate Warhammer",
-      "ItemType": 0,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L41"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "greendragon",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Greenguard Dragon",
-      "ItemName": "Greenguard Dragon Hide",
-      "ItemType": 1,
-      "Quantity": "3"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "sandcastle",
-      "Cell": "r7",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Chaos Sphinx",
-      "ItemName": "Gold Brush",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "crashsite",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "ProtoSartorium",
-      "ItemName": "Non-abrasive Power Powder",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "kitsune",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Kitsune",
-      "ItemName": "No. 1337 Blade Oil",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "citadel",
-      "Cell": "m14",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Grand Inquisitor",
-      "ItemName": "Blinding Lacquer Finish",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "djinn",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Harpy",
-      "ItemName": "Suede Travel Case",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "roc",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Rock Roc",
-      "ItemName": "Sharp Stone Sharpener",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
-      "QuestID": "2163",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1500"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L34"
+      "Label": "L35"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L36"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Bright Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1000"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L31"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L32"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -1999,218 +1856,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L31"
+      "Label": "L35"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L33"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Loyal Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "5"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L45"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L43",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L43"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "5"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L45"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L43",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L43",
-      "Value2": "25"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on Loyal Spirit Orb (went round 25 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2163",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L44"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L47"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2082",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L48"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
-      "Value1": "2082",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L48"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Quest 2082 isn't open for you yet. It's needed for Spirit Orb."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L48"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 0,
-      "QuestID": "2082",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2083",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L49"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
-      "Value1": "2083",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L49"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Quest 2083 isn't open for you yet. It's needed for Spirit Orb."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L49"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 0,
-      "QuestID": "2083",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "battleunderb",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L46"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L47"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-      "Monster": "Skeleton Warrior"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L46"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L47"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 1,
-      "QuestID": "2082",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 1,
-      "QuestID": "2083",
-      "ItemID": ""
+      "Name": "L37"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -2219,9 +1869,13 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bright Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
-      "ItemName": "Loyal Spirit Orb"
+      "ItemName": "Bright Aura"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
@@ -2229,11 +1883,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L43"
+      "Label": "L32"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L44"
+      "Name": "L33"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -2261,7 +1915,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L50"
+      "Label": "L43"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -2287,7 +1941,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L50"
+      "Name": "L43"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -2454,11 +2108,474 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L43"
+      "Label": "L32"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L34"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Loyal Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "5"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L46"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L44",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L44"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "5"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L46"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L44",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L44",
+      "Value2": "25"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on Loyal Spirit Orb (went round 25 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2163",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L45"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L48"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2082",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L49"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
+      "Value1": "2082",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L49"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Quest 2082 isn't open for you yet. It's needed for Spirit Orb."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L49"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 0,
+      "QuestID": "2082",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2083",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
+      "Value1": "2083",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Quest 2083 isn't open for you yet. It's needed for Spirit Orb."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 0,
+      "QuestID": "2083",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "battleunderb",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L47"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L48"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+      "Monster": "Skeleton Warrior"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L47"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L48"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 1,
+      "QuestID": "2082",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 1,
+      "QuestID": "2083",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Loyal Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1000"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L44"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L45"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+      "QuestID": "2163"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Great Ornate Warhammer"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L51"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "dragonplane",
+      "Cell": "r2",
+      "Pad": "Right"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Earth Elemental",
+      "ItemName": "Great Ornate Warhammer",
+      "ItemType": 0,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L51"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "greendragon",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Greenguard Dragon",
+      "ItemName": "Greenguard Dragon Hide",
+      "ItemType": 1,
+      "Quantity": "3"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "sandcastle",
+      "Cell": "r7",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Chaos Sphinx",
+      "ItemName": "Gold Brush",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "crashsite",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "ProtoSartorium",
+      "ItemName": "Non-abrasive Power Powder",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "kitsune",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Kitsune",
+      "ItemName": "No. 1337 Blade Oil",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "citadel",
+      "Cell": "m14",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Grand Inquisitor",
+      "ItemName": "Blinding Lacquer Finish",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "djinn",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Harpy",
+      "ItemName": "Suede Travel Case",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "roc",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Rock Roc",
+      "ItemName": "Sharp Stone Sharpener",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+      "QuestID": "2163",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1500"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L44"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L46"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Blessed Barium of Destiny from shop 434: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -2482,7 +2599,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L52"
+      "Label": "L53"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -2492,13 +2609,13 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L51",
+      "Int": "L52",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L51"
+      "Name": "L52"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -2507,17 +2624,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L52"
+      "Label": "L53"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L51",
+      "Int": "L52",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L51",
+      "Value1": "L52",
       "Value2": "4"
     },
     {
@@ -2535,15 +2652,15 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L51"
+      "Label": "L52"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L52"
+      "Name": "L53"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L22"
+      "Name": "L23"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestDone, Grimoire",
@@ -2552,7 +2669,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L53"
+      "Label": "L54"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -2561,7 +2678,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L54"
+      "Label": "L55"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -2570,7 +2687,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L54"
+      "Label": "L55"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -2578,7 +2695,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L54"
+      "Name": "L55"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -2617,7 +2734,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L53"
+      "Name": "L54"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -2641,7 +2758,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L55"
+      "Label": "L56"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -2669,7 +2786,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L56"
+      "Label": "L57"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -2695,7 +2812,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L56"
+      "Name": "L57"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -2840,7 +2957,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L55"
+      "Name": "L56"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -2864,7 +2981,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L57"
+      "Label": "L58"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -2980,7 +3097,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L58"
+      "Label": "L59"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -3006,7 +3123,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L58"
+      "Name": "L59"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -3085,7 +3202,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L57"
+      "Name": "L58"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Blade of Destiny from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -3109,7 +3230,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L60"
+      "Label": "L61"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -3133,7 +3254,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L61"
+      "Label": "L62"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -3161,7 +3282,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L62"
+      "Label": "L63"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -3187,7 +3308,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L62"
+      "Name": "L63"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -3332,7 +3453,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L61"
+      "Name": "L62"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -3356,7 +3477,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L64"
+      "Label": "L65"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -3365,7 +3486,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L65"
+      "Label": "L66"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -3374,7 +3495,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L65"
+      "Label": "L66"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -3382,7 +3503,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L65"
+      "Name": "L66"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -3397,7 +3518,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L66"
+      "Label": "L67"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -3406,7 +3527,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L66"
+      "Label": "L67"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -3414,7 +3535,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L66"
+      "Name": "L67"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -3439,7 +3560,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L63"
+      "Name": "L64"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -3448,7 +3569,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L64"
+      "Label": "L65"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -3456,11 +3577,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L63"
+      "Label": "L64"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L64"
+      "Name": "L65"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -3496,17 +3617,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L69"
+      "Label": "L70"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L67",
+      "Int": "L68",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L67"
+      "Name": "L68"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -3515,17 +3636,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L69"
+      "Label": "L70"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L67",
+      "Int": "L68",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L67",
+      "Value1": "L68",
       "Value2": "21"
     },
     {
@@ -3539,7 +3660,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L68"
+      "Label": "L69"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -3563,7 +3684,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L71"
+      "Label": "L72"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -3572,7 +3693,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L72"
+      "Label": "L73"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -3581,7 +3702,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L72"
+      "Label": "L73"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -3589,7 +3710,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L72"
+      "Name": "L73"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -3604,7 +3725,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L73"
+      "Label": "L74"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -3613,7 +3734,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L73"
+      "Label": "L74"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -3621,7 +3742,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L73"
+      "Name": "L74"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -3646,7 +3767,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L70"
+      "Name": "L71"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -3655,7 +3776,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L71"
+      "Label": "L72"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -3663,11 +3784,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L70"
+      "Label": "L71"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L71"
+      "Name": "L72"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -3688,6 +3809,10 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
       "ItemName": "Loyal Spirit Orb"
@@ -3698,11 +3823,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L67"
+      "Label": "L68"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L68"
+      "Name": "L69"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -3730,7 +3855,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L74"
+      "Label": "L75"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -3756,7 +3881,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L74"
+      "Name": "L75"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -3923,11 +4048,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L67"
+      "Label": "L68"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L69"
+      "Name": "L70"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -3951,17 +4076,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L76"
+      "Label": "L77"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L75",
+      "Int": "L76",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L75"
+      "Name": "L76"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -3970,17 +4095,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L76"
+      "Label": "L77"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L75",
+      "Int": "L76",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L75",
+      "Value1": "L76",
       "Value2": "4"
     },
     {
@@ -4013,17 +4138,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L79"
+      "Label": "L80"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L77",
+      "Int": "L78",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L77"
+      "Name": "L78"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -4032,17 +4157,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L79"
+      "Label": "L80"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L77",
+      "Int": "L78",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L77",
+      "Value1": "L78",
       "Value2": "45"
     },
     {
@@ -4056,7 +4181,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L78"
+      "Label": "L79"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -4080,17 +4205,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L82"
+      "Label": "L83"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L80",
+      "Int": "L81",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L80"
+      "Name": "L81"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -4099,17 +4224,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L82"
+      "Label": "L83"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L80",
+      "Int": "L81",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L80",
+      "Value1": "L81",
       "Value2": "70"
     },
     {
@@ -4123,7 +4248,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L81"
+      "Label": "L82"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -4147,7 +4272,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L84"
+      "Label": "L85"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -4156,7 +4281,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L85"
+      "Label": "L86"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -4165,7 +4290,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L85"
+      "Label": "L86"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -4173,7 +4298,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L85"
+      "Name": "L86"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -4188,7 +4313,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L86"
+      "Label": "L87"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -4197,7 +4322,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L86"
+      "Label": "L87"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -4205,7 +4330,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L86"
+      "Name": "L87"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -4230,7 +4355,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L83"
+      "Name": "L84"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -4239,7 +4364,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L84"
+      "Label": "L85"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -4247,11 +4372,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L83"
+      "Label": "L84"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L84"
+      "Name": "L85"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -4272,6 +4397,10 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
       "ItemName": "Loyal Spirit Orb"
@@ -4282,259 +4411,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L80"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L81"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
-      "QuestID": "2163"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Great Ornate Warhammer"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L87"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "dragonplane",
-      "Cell": "r2",
-      "Pad": "Right"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Earth Elemental",
-      "ItemName": "Great Ornate Warhammer",
-      "ItemType": 0,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L87"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "greendragon",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Greenguard Dragon",
-      "ItemName": "Greenguard Dragon Hide",
-      "ItemType": 1,
-      "Quantity": "3"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "sandcastle",
-      "Cell": "r7",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Chaos Sphinx",
-      "ItemName": "Gold Brush",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "crashsite",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "ProtoSartorium",
-      "ItemName": "Non-abrasive Power Powder",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "kitsune",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Kitsune",
-      "ItemName": "No. 1337 Blade Oil",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "citadel",
-      "Cell": "m14",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Grand Inquisitor",
-      "ItemName": "Blinding Lacquer Finish",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "djinn",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Harpy",
-      "ItemName": "Suede Travel Case",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "roc",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Rock Roc",
-      "ItemName": "Sharp Stone Sharpener",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
-      "QuestID": "2163",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1500"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L80"
+      "Label": "L81"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L82"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Bright Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1000"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L77"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L78"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -4755,715 +4636,38 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L77"
+      "Label": "L81"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L83"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bright Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Bright Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1000"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L78"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L79"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Brilliant Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L75"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L76"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L59",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L59"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L60"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L59",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L59",
-      "Value2": "4"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on buying Blade of Destiny (went round 4 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Blade of Destiny"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1000"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L59"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L60"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Bright Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Bright Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Bright Blade of Destiny"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Bright Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L90"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Advanced Weapon Kit",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Advanced Weapon Kit",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Advanced Weapon Kit"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Advanced Weapon Kit",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L91"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
-      "QuestID": "2162"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "hachiko",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Dai Tengu",
-      "ItemName": "Superior Blade Oil",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "airstorm",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Lightning Ball",
-      "ItemName": "Shining Lacquer Finish",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "faerie",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Cyclops Warlord",
-      "ItemName": "Brass Awl",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "darkoviaforest",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Lich of the Stone",
-      "ItemName": "Slate Stone Sharpener",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "WolfClaw Hammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "WolfClaw Hammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "WolfClaw Hammer"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "WolfClaw Hammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L92"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "safiria",
-      "Cell": "c3",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Chaos Lycan",
-      "ItemName": "WolfClaw Hammer",
-      "ItemType": 0,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L92"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "lycan",
-      "Cell": "r4",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Chaos Vampire Knight",
-      "ItemName": "Silver Brush",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "sandport",
-      "Cell": "r3",
-      "Pad": "Right"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Tomb Robber",
-      "ItemName": "Leather Case",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "pines",
-      "Cell": "Path1",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "LeatherWing",
-      "ItemName": "Leatherwing Hide",
-      "ItemType": 1,
-      "Quantity": "10"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
-      "QuestID": "2162",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1500"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L91"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Brilliant Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Brilliant Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Brilliant Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Brilliant Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L94"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L93",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L93"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Brilliant Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L94"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L93",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L93",
-      "Value2": "4"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on merging Brilliant Aura (went round 4 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1000"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Bright Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "25"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L97"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L95",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L95"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "25"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L97"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L95",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L95",
-      "Value2": "45"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on Bright Aura (went round 45 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2163",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L96"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Loyal Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "50"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L98",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L98"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "50"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L98",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L98",
-      "Value2": "70"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on Loyal Spirit Orb (went round 70 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2163",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L99"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L102"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2082",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L103"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
-      "Value1": "2082",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L103"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Quest 2082 isn't open for you yet. It's needed for Spirit Orb."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L103"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 0,
-      "QuestID": "2082",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2083",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L104"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
-      "Value1": "2083",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L104"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Quest 2083 isn't open for you yet. It's needed for Spirit Orb."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L104"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 0,
-      "QuestID": "2083",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "battleunderb",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L101"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L102"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-      "Monster": "Skeleton Warrior"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L101"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L102"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 1,
-      "QuestID": "2082",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 1,
-      "QuestID": "2083",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Loyal Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1000"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L98"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L99"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -5491,7 +4695,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L105"
+      "Label": "L89"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -5517,7 +4721,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L105"
+      "Name": "L89"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -5684,11 +4888,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L98"
+      "Label": "L78"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L100"
+      "Name": "L80"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -5697,9 +4901,66 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Brilliant Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
-      "ItemName": "Bright Aura"
+      "ItemName": "Brilliant Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L76"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L77"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L60",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L60"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L61"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L60",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L60",
+      "Value2": "4"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on buying Blade of Destiny (went round 4 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Blade of Destiny"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
@@ -5707,11 +4968,647 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L60"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L61"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bright Blade of Destiny from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Bright Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Bright Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Bright Blade of Destiny"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Bright Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L91"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Advanced Weapon Kit",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Advanced Weapon Kit",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Advanced Weapon Kit"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Advanced Weapon Kit",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L92"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+      "QuestID": "2162"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "hachiko",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Dai Tengu",
+      "ItemName": "Superior Blade Oil",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "airstorm",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Lightning Ball",
+      "ItemName": "Shining Lacquer Finish",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "faerie",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Cyclops Warlord",
+      "ItemName": "Brass Awl",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "darkoviaforest",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Lich of the Stone",
+      "ItemName": "Slate Stone Sharpener",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "WolfClaw Hammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "WolfClaw Hammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "WolfClaw Hammer"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "WolfClaw Hammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L93"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "safiria",
+      "Cell": "c3",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Chaos Lycan",
+      "ItemName": "WolfClaw Hammer",
+      "ItemType": 0,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L93"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "lycan",
+      "Cell": "r4",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Chaos Vampire Knight",
+      "ItemName": "Silver Brush",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "sandport",
+      "Cell": "r3",
+      "Pad": "Right"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Tomb Robber",
+      "ItemName": "Leather Case",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "pines",
+      "Cell": "Path1",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "LeatherWing",
+      "ItemName": "Leatherwing Hide",
+      "ItemType": 1,
+      "Quantity": "10"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+      "QuestID": "2162",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1500"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L92"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Brilliant Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Brilliant Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Brilliant Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Brilliant Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
       "Label": "L95"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L94",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L94"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Brilliant Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L95"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L94",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L94",
+      "Value2": "4"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on merging Brilliant Aura (went round 4 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1000"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Bright Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "25"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L98"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L96",
+      "type": 0,
+      "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L96"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "25"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L98"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L96",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L96",
+      "Value2": "45"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on Bright Aura (went round 45 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2163",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L97"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Loyal Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L101"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L99",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L99"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L101"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L99",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L99",
+      "Value2": "70"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on Loyal Spirit Orb (went round 70 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2163",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L103"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2082",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L104"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
+      "Value1": "2082",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L104"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Quest 2082 isn't open for you yet. It's needed for Spirit Orb."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L104"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 0,
+      "QuestID": "2082",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2083",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L105"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
+      "Value1": "2083",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L105"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Quest 2083 isn't open for you yet. It's needed for Spirit Orb."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L105"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 0,
+      "QuestID": "2083",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "battleunderb",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L102"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L103"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+      "Monster": "Skeleton Warrior"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L102"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L103"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 1,
+      "QuestID": "2082",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 1,
+      "QuestID": "2083",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Loyal Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1000"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L99"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L100"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -5932,11 +5829,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L95"
+      "Label": "L99"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L97"
+      "Name": "L101"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -5945,62 +5842,13 @@
       "Pad": "Spawn"
     },
     {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Brilliant Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L93"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L94"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L89",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L89"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Bright Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L90"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L89",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L89",
-      "Value2": "4"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on buying Bright Blade of Destiny (went round 4 times), so the bot stopped. Send the log."
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bright Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
-      "ItemName": "Bright Blade of Destiny"
+      "ItemName": "Bright Aura"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
@@ -6008,59 +5856,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L89"
+      "Label": "L96"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L90"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Blinding Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Blinding Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Blinding Blade of Destiny"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Blinding Blade of Destiny",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L108"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Ultimate Weapon Kit",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Ultimate Weapon Kit",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Ultimate Weapon Kit"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Ultimate Weapon Kit",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L109"
+      "Name": "L97"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -6088,7 +5888,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L110"
+      "Label": "L107"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -6114,7 +5914,364 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L110"
+      "Name": "L107"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "greendragon",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Greenguard Dragon",
+      "ItemName": "Greenguard Dragon Hide",
+      "ItemType": 1,
+      "Quantity": "3"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "sandcastle",
+      "Cell": "r7",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Chaos Sphinx",
+      "ItemName": "Gold Brush",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "crashsite",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "ProtoSartorium",
+      "ItemName": "Non-abrasive Power Powder",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "kitsune",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Kitsune",
+      "ItemName": "No. 1337 Blade Oil",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "citadel",
+      "Cell": "m14",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Grand Inquisitor",
+      "ItemName": "Blinding Lacquer Finish",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "djinn",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Harpy",
+      "ItemName": "Suede Travel Case",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "roc",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Rock Roc",
+      "ItemName": "Sharp Stone Sharpener",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+      "QuestID": "2163",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1500"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L96"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L98"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Brilliant Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Brilliant Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L94"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L95"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L90",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L90"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Bright Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L91"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L90",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L90",
+      "Value2": "4"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on buying Bright Blade of Destiny (went round 4 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Bright Blade of Destiny"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1000"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L90"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L91"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Blinding Blade of Destiny from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Blinding Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Blinding Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Blinding Blade of Destiny"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Blinding Blade of Destiny",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L109"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Ultimate Weapon Kit",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Ultimate Weapon Kit",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Ultimate Weapon Kit"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Ultimate Weapon Kit",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L110"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+      "QuestID": "2163"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Great Ornate Warhammer"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L111"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "dragonplane",
+      "Cell": "r2",
+      "Pad": "Right"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Earth Elemental",
+      "ItemName": "Great Ornate Warhammer",
+      "ItemType": 0,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L111"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -6281,7 +6438,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L109"
+      "Name": "L110"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -6291,13 +6448,13 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L107",
+      "Int": "L108",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L107"
+      "Name": "L108"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -6306,17 +6463,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L108"
+      "Label": "L109"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L107",
+      "Int": "L108",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L107",
+      "Value1": "L108",
       "Value2": "4"
     },
     {
@@ -6334,11 +6491,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L107"
+      "Label": "L108"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L108"
+      "Name": "L109"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -6362,7 +6519,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L112"
+      "Label": "L113"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -6371,7 +6528,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L113"
+      "Label": "L114"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -6380,7 +6537,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L113"
+      "Label": "L114"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -6388,7 +6545,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L113"
+      "Name": "L114"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -6413,7 +6570,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L111"
+      "Name": "L112"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -6422,7 +6579,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L112"
+      "Label": "L113"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -6430,11 +6587,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L111"
+      "Label": "L112"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L112"
+      "Name": "L113"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -6464,17 +6621,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L115"
+      "Label": "L116"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L114",
+      "Int": "L115",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L114"
+      "Name": "L115"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -6483,17 +6640,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L115"
+      "Label": "L116"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L114",
+      "Int": "L115",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L114",
+      "Value1": "L115",
       "Value2": "78"
     },
     {
@@ -6526,17 +6683,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L118"
+      "Label": "L119"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L116",
+      "Int": "L117",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L116"
+      "Name": "L117"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -6545,17 +6702,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L118"
+      "Label": "L119"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L116",
+      "Int": "L117",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L116",
+      "Value1": "L117",
       "Value2": "45"
     },
     {
@@ -6569,7 +6726,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L117"
+      "Label": "L118"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -6593,17 +6750,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L121"
+      "Label": "L122"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L119",
+      "Int": "L120",
       "type": 0,
       "Value": "0"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L119"
+      "Name": "L120"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -6612,17 +6769,17 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L121"
+      "Label": "L122"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L119",
+      "Int": "L120",
       "type": 1,
       "Value": ""
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L119",
+      "Value1": "L120",
       "Value2": "70"
     },
     {
@@ -6636,7 +6793,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L120"
+      "Label": "L121"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -6660,7 +6817,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L123"
+      "Label": "L124"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -6669,7 +6826,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L124"
+      "Label": "L125"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -6678,7 +6835,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L124"
+      "Label": "L125"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -6686,7 +6843,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L124"
+      "Name": "L125"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -6701,7 +6858,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L125"
+      "Label": "L126"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -6710,7 +6867,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L125"
+      "Label": "L126"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -6718,7 +6875,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L125"
+      "Name": "L126"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -6743,7 +6900,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L122"
+      "Name": "L123"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -6752,7 +6909,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L123"
+      "Label": "L124"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -6760,11 +6917,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L122"
+      "Label": "L123"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L123"
+      "Name": "L124"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -6785,6 +6942,10 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
       "ItemName": "Loyal Spirit Orb"
@@ -6795,259 +6956,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L119"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L120"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
-      "QuestID": "2163"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Great Ornate Warhammer"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Great Ornate Warhammer",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L126"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "dragonplane",
-      "Cell": "r2",
-      "Pad": "Right"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Earth Elemental",
-      "ItemName": "Great Ornate Warhammer",
-      "ItemType": 0,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L126"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "greendragon",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Greenguard Dragon",
-      "ItemName": "Greenguard Dragon Hide",
-      "ItemType": 1,
-      "Quantity": "3"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "sandcastle",
-      "Cell": "r7",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Chaos Sphinx",
-      "ItemName": "Gold Brush",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "crashsite",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "ProtoSartorium",
-      "ItemName": "Non-abrasive Power Powder",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "kitsune",
-      "Cell": "Boss",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Kitsune",
-      "ItemName": "No. 1337 Blade Oil",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "citadel",
-      "Cell": "m14",
-      "Pad": "Left"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Grand Inquisitor",
-      "ItemName": "Blinding Lacquer Finish",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "djinn",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Harpy",
-      "ItemName": "Suede Travel Case",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "roc",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[BossClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[BossClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-      "Monster": "Rock Roc",
-      "ItemName": "Sharp Stone Sharpener",
-      "ItemType": 1,
-      "Quantity": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
-      "QuestID": "2163",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1500"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L119"
+      "Label": "L120"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L121"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Bright Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-      "Delay": "1000"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L116"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L117"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -7268,11 +7181,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L116"
+      "Label": "L120"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L118"
+      "Name": "L122"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -7281,302 +7194,13 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bright Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
-      "ItemName": "Brilliant Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L114"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L115"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
       "ItemName": "Bright Aura"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "125"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L130"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L128",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L128"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Bright Aura",
-      "Value2": "125"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L130"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L128",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L128",
-      "Value2": "145"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on Bright Aura (went round 145 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2163",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L129"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Loyal Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "50"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L133"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L131",
-      "type": 0,
-      "Value": "0"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L131"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Loyal Spirit Orb",
-      "Value2": "50"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L133"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
-      "Int": "L131",
-      "type": 1,
-      "Value": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
-      "Value1": "L131",
-      "Value2": "70"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Stuck on Loyal Spirit Orb (went round 70 times), so the bot stopped. Send the log."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2163",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L132"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "1"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
-      "TransferFromBank": true,
-      "ItemName": "Spirit Orb"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L135"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2082",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L136"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
-      "Value1": "2082",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L136"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Quest 2082 isn't open for you yet. It's needed for Spirit Orb."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L136"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 0,
-      "QuestID": "2082",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
-      "Value1": "2083",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L137"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
-      "Value1": "2083",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L137"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-      "Message": "Quest 2083 isn't open for you yet. It's needed for Spirit Orb."
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L137"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 0,
-      "QuestID": "2083",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "battleunderb",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
-      "Value1": "[FarmClass]",
-      "Value2": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
-      "ItemName": "[FarmClass]"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L134"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
-      "Value1": "Spirit Orb",
-      "Value2": "100"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L135"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-      "Monster": "Skeleton Warrior"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L134"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L135"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 1,
-      "QuestID": "2082",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
-      "state": 1,
-      "QuestID": "2083",
-      "ItemID": ""
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-      "Map": "necropolis",
-      "Cell": "Enter",
-      "Pad": "Spawn"
-    },
-    {
-      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
-      "ShopId": "422",
-      "ItemName": "Loyal Spirit Orb"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
@@ -7584,11 +7208,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L131"
+      "Label": "L117"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L132"
+      "Name": "L118"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -7616,7 +7240,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L138"
+      "Label": "L128"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -7642,7 +7266,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L138"
+      "Name": "L128"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -7809,11 +7433,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L131"
+      "Label": "L117"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L133"
+      "Name": "L119"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -7822,9 +7446,310 @@
       "Pad": "Spawn"
     },
     {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Brilliant Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
       "ShopId": "422",
+      "ItemName": "Brilliant Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L115"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L116"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
       "ItemName": "Bright Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "125"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L131"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L129",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L129"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Bright Aura",
+      "Value2": "125"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L131"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L129",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L129",
+      "Value2": "145"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on Bright Aura (went round 145 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2163",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L130"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Loyal Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L134"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L132",
+      "type": 0,
+      "Value": "0"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L132"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Loyal Spirit Orb",
+      "Value2": "50"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L134"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdInt, Grimoire",
+      "Int": "L132",
+      "type": 1,
+      "Value": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdIntGreaterThan, Grimoire",
+      "Value1": "L132",
+      "Value2": "70"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Stuck on Loyal Spirit Orb (went round 70 times), so the bot stopped. Send the log."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2163",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L133"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Spirit Orb"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L136"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2082",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L137"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
+      "Value1": "2082",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L137"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Quest 2082 isn't open for you yet. It's needed for Spirit Orb."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L137"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 0,
+      "QuestID": "2082",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
+      "Value1": "2083",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L138"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
+      "Value1": "2083",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L138"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+      "Message": "Quest 2083 isn't open for you yet. It's needed for Spirit Orb."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L138"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 0,
+      "QuestID": "2083",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "battleunderb",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L135"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Spirit Orb",
+      "Value2": "100"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L136"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+      "Monster": "Skeleton Warrior"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L135"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L136"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 1,
+      "QuestID": "2082",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
+      "state": 1,
+      "QuestID": "2083",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Loyal Spirit Orb from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Loyal Spirit Orb"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
@@ -7832,11 +7757,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L128"
+      "Label": "L132"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L129"
+      "Name": "L133"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -8057,11 +7982,263 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L128"
+      "Label": "L132"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L134"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "necropolis",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Bright Aura from shop 422: merge, paid with items (0 AC). Checked on the AQW wiki: no paid AC."
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
+      "ShopId": "422",
+      "ItemName": "Bright Aura"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1000"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L129"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
       "Name": "L130"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+      "QuestID": "2163"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInBank, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+      "TransferFromBank": true,
+      "ItemName": "Great Ornate Warhammer"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
+      "Value1": "Great Ornate Warhammer",
+      "Value2": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L140"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "dragonplane",
+      "Cell": "r2",
+      "Pad": "Right"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Earth Elemental",
+      "ItemName": "Great Ornate Warhammer",
+      "ItemType": 0,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L140"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "greendragon",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Greenguard Dragon",
+      "ItemName": "Greenguard Dragon Hide",
+      "ItemType": 1,
+      "Quantity": "3"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "sandcastle",
+      "Cell": "r7",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Chaos Sphinx",
+      "ItemName": "Gold Brush",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "crashsite",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "ProtoSartorium",
+      "ItemName": "Non-abrasive Power Powder",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "kitsune",
+      "Cell": "Boss",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Kitsune",
+      "ItemName": "No. 1337 Blade Oil",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "citadel",
+      "Cell": "m14",
+      "Pad": "Left"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Grand Inquisitor",
+      "ItemName": "Blinding Lacquer Finish",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "djinn",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[FarmClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[FarmClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Harpy",
+      "ItemName": "Suede Travel Case",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+      "Map": "roc",
+      "Cell": "Enter",
+      "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotEquipped, Grimoire",
+      "Value1": "[BossClass]",
+      "Value2": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+      "ItemName": "[BossClass]"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+      "Monster": "Rock Roc",
+      "ItemName": "Sharp Stone Sharpener",
+      "ItemType": 1,
+      "Quantity": "1"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+      "QuestID": "2163",
+      "ItemID": ""
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+      "Delay": "1500"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+      "Label": "L129"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+      "Name": "L131"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdNotInInventory, Grimoire",
@@ -8085,7 +8262,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L141"
+      "Label": "L142"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -8094,7 +8271,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L142"
+      "Label": "L143"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -8103,7 +8280,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L142"
+      "Label": "L143"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -8111,7 +8288,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L142"
+      "Name": "L143"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8126,7 +8303,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L143"
+      "Label": "L144"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -8135,7 +8312,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L143"
+      "Label": "L144"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -8143,7 +8320,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L143"
+      "Name": "L144"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8158,7 +8335,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L144"
+      "Label": "L145"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -8167,7 +8344,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L144"
+      "Label": "L145"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -8175,7 +8352,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L144"
+      "Name": "L145"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8200,7 +8377,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L140"
+      "Name": "L141"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -8209,7 +8386,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L141"
+      "Label": "L142"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -8217,11 +8394,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L140"
+      "Label": "L141"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L141"
+      "Name": "L142"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8263,7 +8440,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L146"
+      "Label": "L147"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestAvailable, Grimoire",
@@ -8272,7 +8449,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L147"
+      "Label": "L148"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -8281,7 +8458,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L147"
+      "Label": "L148"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -8289,7 +8466,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L147"
+      "Name": "L148"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8304,7 +8481,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L148"
+      "Label": "L149"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.Statements.CmdQuestInProgress, Grimoire",
@@ -8313,7 +8490,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L148"
+      "Label": "L149"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
@@ -8321,7 +8498,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L148"
+      "Name": "L149"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8346,7 +8523,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L145"
+      "Name": "L146"
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.Statements.CmdInInventory, Grimoire",
@@ -8355,7 +8532,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L146"
+      "Label": "L147"
     },
     {
       "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
@@ -8363,11 +8540,11 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L145"
+      "Label": "L146"
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L146"
+      "Name": "L147"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdQuestlist, Grimoire",
@@ -8403,7 +8580,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L149"
+      "Label": "L150"
     },
     {
       "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -8431,7 +8608,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-      "Label": "L150"
+      "Label": "L151"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -8457,7 +8634,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L150"
+      "Name": "L151"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -8624,7 +8801,7 @@
     },
     {
       "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-      "Name": "L149"
+      "Name": "L150"
     },
     {
       "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
@@ -8658,6 +8835,10 @@
       "Map": "necropolis",
       "Cell": "Enter",
       "Pad": "Spawn"
+    },
+    {
+      "$type": "Grimoire.Botting.Commands.Misc.CmdBlank2, Grimoire",
+      "Text": "Buy Blinding Light of Destiny from shop 1415: free (0 AC). Checked on the AQW wiki: no paid AC."
     },
     {
       "$type": "Grimoire.Botting.Commands.Item.CmdBuy, Grimoire",
